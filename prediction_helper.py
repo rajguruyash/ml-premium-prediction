@@ -3,10 +3,10 @@
 import pandas as pd
 import joblib
 
-model_young = joblib.load("/Users/apple/Documents/ML/project1/app/artifacts/model_young.joblib")
-model_rest = joblib.load("/Users/apple/Documents/ML/project1/app/artifacts/model_rest.joblib")
-scaler_young = joblib.load("/Users/apple/Documents/ML/project1/app/artifacts/scaler_young.joblib")
-scaler_rest = joblib.load("/Users/apple/Documents/ML/project1/app/artifacts/scaler_rest.joblib")
+model_young = joblib.load("/Users/apple/ml-premium-prediction/artifacts/model_young.joblib")
+model_rest = joblib.load("/Users/apple/ml-premium-prediction/artifacts/model_rest.joblib")
+scaler_young = joblib.load("/Users/apple/ml-premium-prediction/artifacts/scaler_young.joblib")
+scaler_rest = joblib.load("/Users/apple/ml-premium-prediction/artifacts/scaler_rest.joblib")
 
 
 def calculate_normalized_risk(medical_history):
