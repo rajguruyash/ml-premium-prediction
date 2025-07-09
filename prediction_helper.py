@@ -2,13 +2,19 @@
 
 import pandas as pd
 import joblib
-
-model_young = joblib.load("/Users/apple/ml-premium-prediction/artifacts/model_young.joblib")
-model_rest = joblib.load("/Users/apple/ml-premium-prediction/artifacts/model_rest.joblib")
-scaler_young = joblib.load("/Users/apple/ml-premium-prediction/artifacts/scaler_young.joblib")
-scaler_rest = joblib.load("/Users/apple/ml-premium-prediction/artifacts/scaler_rest.joblib")
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+model_young_path = os.path.join(BASE_DIR, "artifacts", "model_young.joblib")
+model_rest_path = os.path.join(BASE_DIR, "artifacts", "model_rest.joblib")
+scaler_young_path = os.path.join(BASE_DIR, "artifacts", "scaler_young.joblib")
+scaler_rest_path = os.path.join(BASE_DIR, "artifacts", "scaler_rest.joblib")
+
+model_young = joblib.load(model_young_path)
+model_rest = joblib.load(model_rest_path)
+scaler_young = joblib.load(scaler_young_path)
+scaler_rest = joblib.load(scaler_rest_path)
 def calculate_normalized_risk(medical_history):
     risk_scores = {
         "diabetes": 6,
