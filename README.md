@@ -1,5 +1,5 @@
 # 🧠 Insurance Premium Prediction using Machine Learning
-
+link - https://ml-premium-prediction-model.streamlit.app
 This project predicts insurance premiums using customer demographic and income data. After experimenting with various models, **XGBoost** was selected as the final model due to its superior accuracy and performance.
 
 ---
